@@ -1,0 +1,7 @@
+<h1>ElectoGrade Search</h1>
+<%= form_tag("/search", method: "get") do %>
+  <div class="form_group col-sm-4 col-sm-offset-4">
+      <%= text_field_tag(:zip, nil, {:placeholder => "Enter Zip Here",:class => "form-control"}) %>
+      <%= submit_tag("Search",{:class => "form-control"}) %>
+  </div>
+<% end %>
